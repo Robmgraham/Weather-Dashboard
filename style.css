@@ -1,0 +1,38 @@
+.banner{
+    height: 100px;
+    background-color: rgb(49, 49, 49);
+    text-align:center;
+    font-size: 50px;
+    color:white;
+    padding: auto; 
+}
+
+.search{
+    background-color: palegreen;
+    float: left;
+    color:white;
+    height: 400px;
+}
+
+.cityDetails{
+    background-color: green;
+    float: left;
+    color: white;
+    height: 250px;
+}
+
+.fiveDay{
+    margin: auto;
+    background-color:red;
+    float:wrap;
+    color:black;
+    height: 150px;
+
+}
+
+.card{
+    margin: auto;
+    width: 60rem;
+    height: 8rem;
+    float:right;
+}
