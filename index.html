@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-
+    
 </head>
 <header class = "banner">Weather Dashboard</header>
 
@@ -41,33 +41,6 @@
             </div>
         </div>
     </div>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-var location = document.getElementsByClassName("cityEntry");
-var queryURL = "api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=3ae82f9a8459dc078c90588dfa2e5441";
-
-
-$.ajax({
-    url:queryURL,
-    method:"GET"
-}).then (function(response) {
-    var liRow = $("<ul>").text;
-
-    var city = $("<li>").text(response);
-    
-    liRow.append(city);
-    
-
-});
-})
-   
-   
-        
-    
-    
-</script>
+    <script src="./script.js"></script>
 </body>
 </html>
