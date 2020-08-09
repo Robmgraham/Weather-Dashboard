@@ -1,5 +1,5 @@
-document.ready(function () {
-    var location = document.getElementsByClassName("cityEntry");
+(function () {
+    var location = document.getElementsByClassName("cityEntry").val;
     var queryURL = "api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=3ae82f9a8459dc078c90588dfa2e5441";
     
     
@@ -7,11 +7,8 @@ document.ready(function () {
         url:queryURL,
         method:"GET"
     }).then (function(response) {
-        var liRow = $("<ul>").text;
+         append(".cityDetails");
+        console.log(response);
     
-        var city = $("<li>").text(response);
-        
-        liRow.append(city);
-        console.log("location");
-    
-    })});
+    });
+});
